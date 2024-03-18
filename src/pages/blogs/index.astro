@@ -1,0 +1,36 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import PostCard from "../../components/PostCard.astro";
+
+const posts = await Astro.glob("../../content/Posts/*.md");
+
+type postType = {
+  title: string;
+  date: string;
+  description: string;
+  image: string;
+  tags: string[];
+  author: string;
+  excerpt: string;
+  frontmatter: any;
+};
+---
+
+<MainLayout
+  title="Blogs Page"
+  description="this page show all blogs and you can read all that">
+  <div class="mt-16">
+    <p class="flex justify-center mb-12 text-blue-500 text-3xl font-bold ml-5">
+      All Blogs
+    </p>
+    <div class="w-[100%] flex flex-wrap">
+      {
+        posts.map((post: any) => (
+          <PostCard data={post.frontmatter}>
+            {post.frontmatter.title}
+          </PostCard>
+          ))
+      }
+    </div>
+  </div>
+</MainLayout>

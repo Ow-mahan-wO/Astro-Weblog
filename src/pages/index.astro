@@ -1,0 +1,71 @@
+---
+import * as Post1 from "../content/Posts/how-to-install-astro.md";
+import * as Post2 from "../content/Posts/what-is-javascript.md";
+import * as Post3 from "../content/Posts/what-is-nextjs.md";
+
+import { Image } from "astro:assets";
+import MainLayout from "../layouts/MainLayout.astro";
+import PostCard from "../components/PostCard.astro";
+
+import mini_Logo from "../../public/mini-logo.png";
+
+const newPosts = [Post1, Post2, Post3];
+---
+
+<style>
+  .animate {
+    animation: logoAnimate 2s ease-in-out alternate infinite;
+  }
+  @keyframes logoAnimate {
+    0% {
+      position: relative;
+      top: 0;
+    }
+    100% {
+      position: relative;
+      top: 50px;
+    }
+  }
+</style>
+<MainLayout title="Home Page" description="this is Primary page on my website">
+  <div>
+    <section>
+      <div class="flex w-[100%] mt-24">
+        <div class="w-[30%]">
+          <Image
+            class="animate mx-auto"
+            src={mini_Logo}
+            width={200}
+            height={200}
+            loading="eager"
+            alt="Landing Logo"
+          />
+        </div>
+        <div class="flex flex-col w-[70%] justify-center items-center">
+          <h2 class="text-3xl font-bold text-blue-500 my-4">
+            Welcome to my Weblog Application
+          </h2>
+          <h6 class="w-[39rem] ml-32">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+            aliquam nemo repellat similique qui aliquid, exercitationem quis
+            quibusdam officiis assumenda nisi quidem? Aliquam, quaerat minima.
+            Culpa fuga sapiente officia amet?
+          </h6>
+          <input
+            type="text"
+            class="border border-blue-500 rounded-xl indent-3 text-blue-500 outline-none ml-24 mt-5 p-2 w-[70%]"
+          />
+        </div>
+      </div>
+    </section>
+    <section>
+      <h1
+        class="text-2xl font-bold mt-[12rem] text-blue-500 flex justify-center">
+        New Posts
+      </h1>
+      <div class="mt-10 w-[100%] flex flex-wrap">
+        {newPosts?.map((post) => <PostCard data={post.frontmatter} />)}
+      </div>
+    </section>
+  </div>
+</MainLayout>

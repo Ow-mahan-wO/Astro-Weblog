@@ -1,0 +1,27 @@
+---
+import MainHead from "./MainHead.astro";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
+
+interface Props {
+  title: string;
+  description: string;
+}
+const { title, description } = Astro.props as Props;
+---
+
+<!doctype html>
+<html lang="en">
+  <MainHead {title} {description} />
+  <body class="flex flex-col justify-between w-[76rem] mx-auto">
+    <div>
+      <Navbar client:load />
+    </div>
+    <div class="w-[100%] h-[100%]" transition:animate="slide">
+      <slot />
+    </div>
+    <div>
+      <Footer />
+    </div>
+  </body>
+</html>
