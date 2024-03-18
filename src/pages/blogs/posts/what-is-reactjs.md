@@ -1,6 +1,8 @@
 ---
+  layout : '../../../layouts/BlogPostLayout.astro'
   title: "What is React js"
   date: "2024/03/10"
+  slug : what-is-reactjs
   image: "what-is-Reactjs.png"
   excerpt: "Lorem ipsum dolor
     sit amet consectetur adipisicing elit Voluptatum dolores iure quia

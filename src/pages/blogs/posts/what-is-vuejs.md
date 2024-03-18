@@ -1,7 +1,8 @@
 ---
-
+  layout : '../../../layouts/BlogPostLayout.astro'
   title: "What is Vue js"
   date: "2024/03/14"
+  slug : what-is-vuejs
   image: "what-is-vuejs.png"
   excerpt: "Lorem ipsum dolor
     sit amet consectetur adipisicing elit Voluptatum dolores iure quia

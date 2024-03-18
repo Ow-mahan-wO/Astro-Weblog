@@ -1,7 +1,7 @@
 ---
-import * as Post1 from "../content/Posts/how-to-install-astro.md";
-import * as Post2 from "../content/Posts/what-is-javascript.md";
-import * as Post3 from "../content/Posts/what-is-nextjs.md";
+import * as Post1 from "./blogs/posts/how-to-install-astro.md";
+import * as Post2 from "./blogs/posts/what-is-javascript.md";
+import * as Post3 from "./blogs/posts/what-is-nextjs.md";
 
 import { Image } from "astro:assets";
 import MainLayout from "../layouts/MainLayout.astro";
@@ -39,6 +39,7 @@ const newPosts = [Post1, Post2, Post3];
             height={200}
             loading="eager"
             alt="Landing Logo"
+            format="webp"
           />
         </div>
         <div class="flex flex-col w-[70%] justify-center items-center">

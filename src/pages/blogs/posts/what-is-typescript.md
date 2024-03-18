@@ -1,7 +1,8 @@
 ---
-
+  layout : '../../../layouts/BlogPostLayout.astro'
   title: "What is Typescript"
   date: "2024/03/14"
+  slug : what-is-typescript
   image: "what-is-typescript.jpg"
   excerpt: "Lorem ipsum dolor
     sit amet consectetur adipisicing elit Voluptatum dolores iure quia

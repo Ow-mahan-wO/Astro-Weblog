@@ -1,0 +1,18 @@
+---
+type postType = {
+  slug: string;
+};
+
+const posts = await Astro.glob("./posts/*.md");
+
+export const getStaticPaths = async () => {
+  return [
+    posts?.map((post: postType) => {
+      return {
+        params: post.slug,
+      };
+    }),
+  ];
+};
+---
+

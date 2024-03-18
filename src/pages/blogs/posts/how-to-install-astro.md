@@ -1,7 +1,8 @@
 ---
-  layout: '../../layouts/BlogPostsLayout.astro'
+  layout : '../../../layouts/BlogPostLayout.astro'
   title: "How to Install Astro"
   date: "2024/03/14"
+  slug: 'how-to-install-astro'
   image: "how-to-install-astro.png"
   excerpt: "Lorem ipsum dolor
     sit amet consectetur adipisicing elit Voluptatum dolores iure quia

@@ -1,6 +1,8 @@
 ---
+  layout : '../../../layouts/BlogPostLayout.astro'
   title: "What is Javascript"
   date: "2024/03/14"
+  slug : what-is-javascript
   image: "what-is-Javascript.png"
   excerpt: "Lorem ipsum dolor
     sit amet consectetur adipisicing elit Voluptatum dolores iure quia
@@ -20,7 +22,6 @@ JavaScript is a scripting or programming language that allows you to implement c
 - CSS is a language of style rules that we use to apply styling to our HTML content, for example setting background colors and fonts, and laying out our content in multiple columns.
 
 - JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else. (Okay, not everything, but it is amazing what you can achieve with a few lines of JavaScript code.)
-
 
 The three layers build on top of one another nicely. Let's take a button as an example. We can mark it up using HTML to give it structure and purpose:
 
@@ -44,7 +45,6 @@ button {
   cursor: pointer;
 }
 ```
-
 
 And finally, we can add some JavaScript to implement dynamic behavior:
 

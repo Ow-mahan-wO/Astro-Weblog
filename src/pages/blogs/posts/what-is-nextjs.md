@@ -1,7 +1,8 @@
 ---
-
+  layout : '../../../layouts/BlogPostLayout.astro'
   title: "What is Nextjs"
   date: "2024/01/12"
+  slug : what-is-nextjs
   image: 'what-is-Nextjs.jpg'
   excerpt: 'Lorem ipsum dolor
     sit amet consectetur adipisicing elit Voluptatum dolores iure quia
@@ -24,7 +25,7 @@ Whether you're an individual developer or part of a larger team, Next.js can hel
 
 Some of the main Next.js features include:
 
-## Feature Description
+# Feature Description
 
 - Routing A file-system based router built on top of Server Components that supports layouts, nested routing, loading states, error handling, and more.
   Rendering Client-side and Server-side Rendering with Client and Server Components. Further optimized with Static and Dynamic Rendering on the server with Next.js. Streaming on Edge and Node.js runtimes.
@@ -34,7 +35,7 @@ Some of the main Next.js features include:
 - Optimizations Image, Fonts, and Script Optimizations to improve your application's Core Web Vitals and User Experience.
 - TypeScript Improved support for TypeScript, with better type checking and more efficient compilation, as well as custom TypeScript Plugin and type checker.
 
-## How to Use These Docs ?
+# How to Use These Docs ?
 
 On the left side of the screen, you'll find the docs navbar. The pages of the docs are organized sequentially, from basic to advanced, so you can follow them step-by-step when building your application. However, you can read them in any order or skip to the pages that apply to your use case.
 
@@ -42,7 +43,7 @@ On the right side of the screen, you'll see a table of contents that makes it ea
 
 To get started, checkout the Installation guide.
 
-## App Router vs Pages Router
+# App Router vs Pages Router
 
 Next.js has two different routers: the App Router and the Pages Router. The App Router is a newer router that allows you to use React's latest features, such as Server Components and Streaming. The Pages Router is the original Next.js router, which allowed you to build server-rendered React applications and continues to be supported for older Next.js applications.
 
@@ -50,12 +51,12 @@ At the top of the sidebar, you'll notice a dropdown menu that allows you to swit
 
 The breadcrumbs at the top of the page will also indicate whether you're viewing App Router docs or Pages Router docs.
 
-## Pre-Requisite Knowledge
+# Pre-Requisite Knowledge
 
 Although our docs are designed to be beginner-friendly, we need to establish a baseline so that the docs can stay focused on Next.js functionality. We'll make sure to provide links to relevant documentation whenever we introduce a new concept.
 
 To get the most out of our docs, it's recommended that you have a basic understanding of HTML, CSS, and React. If you need to brush up on your React skills, check out our React Foundations Course, which will introduce you to the fundamentals. Then, learn more about Next.js by building a dashboard application.
 
-## Accessibility
+# Accessibility
 
 For optimal accessibility when using a screen reader while reading the docs, we recommend using Firefox and NVDA, or Safari and VoiceOver.

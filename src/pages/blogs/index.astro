@@ -2,18 +2,7 @@
 import MainLayout from "../../layouts/MainLayout.astro";
 import PostCard from "../../components/PostCard.astro";
 
-const posts = await Astro.glob("../../content/Posts/*.md");
-
-type postType = {
-  title: string;
-  date: string;
-  description: string;
-  image: string;
-  tags: string[];
-  author: string;
-  excerpt: string;
-  frontmatter: any;
-};
+const posts = await Astro.glob("./posts/*.md");
 ---
 
 <MainLayout
@@ -25,11 +14,9 @@ type postType = {
     </p>
     <div class="w-[100%] flex flex-wrap">
       {
-        posts.map((post: any) => (
-          <PostCard data={post.frontmatter}>
-            {post.frontmatter.title}
-          </PostCard>
-          ))
+        posts.map((post) =>  (
+          <PostCard data={post.frontmatter}>{post.frontmatter.title}</PostCard>
+        ))
       }
     </div>
   </div>
