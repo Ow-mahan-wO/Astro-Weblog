@@ -3,7 +3,7 @@ type postType = {
   slug: string;
 };
 
-const posts = await Astro.glob("./posts/*.md");
+const posts:any = await Astro.glob("./posts/*.md");
 
 export const getStaticPaths = async () => {
   return [
