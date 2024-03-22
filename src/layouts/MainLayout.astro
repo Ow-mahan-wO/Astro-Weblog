@@ -13,7 +13,7 @@ const { title, description } = Astro.props as Props;
 <!doctype html>
 <html lang="en">
   <MainHead {title} {description} />
-  <body class="flex flex-col justify-between w-[76rem] mx-auto">
+  <body class="flex flex-col justify-between xl:w-[76rem] lg:w-[100%] mx-auto">
     <div>
       <Navbar client:load />
     </div>

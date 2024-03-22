@@ -12,9 +12,9 @@ const posts = await Astro.glob("./posts/*.md");
     <p class="flex justify-center mb-12 text-blue-500 text-3xl font-bold ml-5">
       All Blogs
     </p>
-    <div class="w-[100%] flex flex-wrap">
+    <div class="w-[100%] flex flex-wrap justify-center">
       {
-        posts.map((post) =>  (
+        posts.map((post) => (
           <PostCard data={post.frontmatter}>{post.frontmatter.title}</PostCard>
         ))
       }
